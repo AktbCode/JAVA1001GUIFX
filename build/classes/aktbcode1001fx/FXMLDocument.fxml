@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="770.0" prefWidth="670.0" style="-fx-background-color: rgba(255,255,255,0);" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aktbcode1001fx.FXMLDocumentController">
+   <children>
+      <AnchorPane fx:id="UpBar" prefHeight="60.0" prefWidth="670.0" style="-fx-background-color: #DDD; -fx-border-radius: 10px; -fx-background-radius: 10px;">
+         <children>
+            <ImageView fx:id="UserBtn" layoutX="500.0" layoutY="5.0" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/userB.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="393.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/userB.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="276.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/sound.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="173.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/pc.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="SettingsBtn" layoutX="64.0" layoutY="5.0" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/settings.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="SideBar" layoutX="610.0" prefHeight="770.0" prefWidth="60.0" style="-fx-background-color: #DDD; -fx-border-radius: 10px; -fx-background-radius: 10px;">
+         <children>
+            <ImageView fx:id="HomeBtn" fitHeight="33.0" fitWidth="32.0" layoutX="14.0" layoutY="15.0" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/home.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="CloseBtn" layoutX="5.0" layoutY="96.0" onMousePressed="#handleCloseButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/poweroff.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="5.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/userB.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="5.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/userB.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="5.0" layoutY="377.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/userB.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="5.0" layoutY="483.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/userB.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="5.0" layoutY="593.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/userB.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="SettingsPanel" layoutY="70.0" prefHeight="700.0" prefWidth="600.0" style="-fx-background-color: #DDD; -fx-background-radius: 20px; -fx-border-radius: 20px;" visible="false">
+         <children>
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="414.0" layoutY="76.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="34.0" prefWidth="157.0" text="هذا زر التشغيل الأول" textAlignment="RIGHT">
+               <font>
+                  <Font name="Droid Arabic Kufi Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="306.0" layoutY="110.0" opacity="0.34" prefHeight="60.0" prefWidth="265.0" text="هذا الزر لتشغيل الأختيار الأول من لوحة التحكم &#10;الخاصة بالتطيبق الأول لموقع أكتب كود" textAlignment="RIGHT" />
+            <JFXToggleButton layoutX="121.0" layoutY="93.0" text="تشغيل" />
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="414.0" layoutY="197.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="34.0" prefWidth="157.0" text="هذا زر التشغيل الثانى" textAlignment="RIGHT">
+               <font>
+                  <Font name="Droid Arabic Kufi Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="306.0" layoutY="231.0" opacity="0.34" prefHeight="60.0" prefWidth="265.0" text="هذا الزر لتشغيل الأختيار الثانى من لوحة التحكم &#10;الخاصة بالتطيبق الأول لموقع أكتب كود" textAlignment="RIGHT" />
+            <JFXToggleButton layoutX="121.0" layoutY="214.0" text="تشغيل" />
+            <Separator layoutX="36.0" layoutY="318.0" prefHeight="18.0" prefWidth="540.0" />
+            <JFXSlider layoutX="92.0" layoutY="379.0" prefHeight="35.0" prefWidth="459.0" />
+            <Label layoutX="424.0" layoutY="350.0" prefHeight="17.0" prefWidth="120.0" text="لرفع مستوى الصوت" />
+            <JFXButton layoutX="95.0" layoutY="487.0" prefHeight="35.0" prefWidth="190.0" style="-fx-background-color: #9da1c5;" text="ألغاء الأمر" textFill="#001aff">
+               <font>
+                  <Font name="Droid Arabic Kufi Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="329.0" layoutY="487.0" prefHeight="35.0" prefWidth="190.0" style="-fx-background-color: #9da1c5;" text="حفظ الأعدادات" textFill="#001aff">
+               <font>
+                  <Font name="Droid Arabic Kufi Bold" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="TheMainPanel" layoutY="70.0" prefHeight="700.0" prefWidth="600.0" style="-fx-background-color: #DDD; -fx-background-radius: 20px; -fx-border-radius: 20px;">
+         <children>
+            <Label layoutX="179.0" layoutY="51.0" prefHeight="76.0" prefWidth="265.0" text="AktbCode">
+               <font>
+                  <Font name="Kill your darlings AC" size="46.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_CENTER" layoutX="77.0" layoutY="127.0" prefHeight="60.0" prefWidth="446.0" text="www.aktbcode.com" textAlignment="CENTER" textFill="#0c04ee">
+               <font>
+                  <Font name="Kill your darlings AC" size="37.0" />
+               </font>
+            </Label>
+            <Label layoutX="192.0" layoutY="189.0" prefHeight="32.0" prefWidth="217.0" text="Dev.Mostafa Elghayesh">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField alignment="CENTER_RIGHT" layoutX="187.0" layoutY="307.0" prefHeight="35.0" prefWidth="250.0" promptText="    أدخل أسم المستخدم">
+               <font>
+                  <Font name="Droid Arabic Kufi" size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField alignment="CENTER_RIGHT" layoutX="187.0" layoutY="383.0" prefHeight="35.0" prefWidth="250.0" promptText="    أدخل كلمة المرور" />
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="444.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/userB.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="444.0" layoutY="385.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/password.png" />
+               </image>
+            </ImageView>
+            <JFXCheckBox alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="405.0" layoutY="459.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="17.0" prefWidth="65.0" text="تذكرنى" textAlignment="RIGHT" />
+            <JFXButton layoutX="179.0" layoutY="447.0" prefHeight="17.0" prefWidth="190.0" style="-fx-background-color: #ced4ea; -fx-background-radius: 10px; -fx-border-radius: 10px;" text="تسجيل الدخول" textFill="#375ce4">
+               <font>
+                  <Font name="Droid Arabic Kufi Bold" size="13.0" />
+               </font>
+            </JFXButton>
+         </children></AnchorPane>
+      <AnchorPane fx:id="HomePanel" layoutY="70.0" prefHeight="700.0" prefWidth="600.0" style="-fx-background-color: #DDD; -fx-background-radius: 20px; -fx-border-radius: 20px;" visible="false">
+         <children>
+            <Label alignment="TOP_CENTER" layoutX="55.0" layoutY="21.0" prefHeight="110.0" prefWidth="497.0" text="هذه الواجهة الرسومية أول تطبيق وأختبار لما سيتم تقديمة فى دورة لغة الجافا&#10;من موقع ومنتديات أكتب كود ( www.aktbcode.com )&#10;من تقديم وأعداد المهندس مصطفى الغايش" textAlignment="CENTER">
+               <font>
+                  <Font name="Droid Arabic Kufi" size="14.0" />
+               </font>
+            </Label>
+            <Separator layoutX="34.0" layoutY="139.0" prefHeight="17.0" prefWidth="540.0" />
+            <Label alignment="TOP_CENTER" layoutX="81.0" layoutY="171.0" prefHeight="60.0" prefWidth="446.0" text="www.aktbcode.com" textAlignment="CENTER" textFill="#0c04ee">
+               <font>
+                  <Font name="Kill your darlings AC" size="37.0" />
+               </font>
+            </Label>
+            <Label layoutX="168.0" layoutY="252.0" prefHeight="76.0" prefWidth="265.0" text="AktbCode">
+               <font>
+                  <Font name="Kill your darlings AC" size="46.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
